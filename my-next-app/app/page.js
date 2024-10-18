@@ -36,10 +36,13 @@ export default function FetchPosts() {
 
   // Render posts once they are fetched
   return (
-    <ul>
+    <div>
+      <ul>
       {posts.map((post) => (
         <li key={post.id}>{post.date}</li>
       ))}
     </ul>
+    </div>
+    
   )
 }
